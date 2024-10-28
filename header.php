@@ -7,12 +7,14 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-            <?php if( has_custom_logo() ): ?>
-                <?php the_custom_logo(); ?>
-            <?php endif; ?>
-            <?php if ( has_nav_menu( 'menu_header' ) ) {
-                wp_nav_menu( array(
-                    'theme_location' => 'menu_header' 
-                ) );
-            }
-            ?>
+            <header>
+                <?php if( has_custom_logo() ): ?>
+                    <?php the_custom_logo(); ?>
+                <?php endif; ?>
+                <?php if ( has_nav_menu( 'menu_header' ) ) {
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu_header' 
+                    ) );
+                }
+                ?>
+            </header>
