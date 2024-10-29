@@ -4,6 +4,18 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>
+            <?php 
+            if (is_front_page() || is_home()) {
+                // Exibe apenas o nome do site na página inicial
+                $title = get_bloginfo('name');
+            } else {
+                // Exibe o título da página/post e o nome do site em outras páginas
+                $title = wp_get_document_title() . ' | ' . get_bloginfo('name');
+            }
+            echo $title;
+            ?>
+        </title>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
