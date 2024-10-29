@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 16px;
+}
+
+header {
+    padding: 24px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: gray;
+}
+
+main {
+    padding: 24px;
+    height: 100vh;
+}
+
+footer {
+    padding: 24px;
+    background-color: gray;
+    color: white;
+}
+
+.introducao,
+.categorias {
+    margin-bottom: 24px;
+}
+
+.ultimos-posts ul,
+.posts ul {
+    display: flex;
+    gap: 20px;
+}
+
+.ultimos-posts ul li,
+.posts ul li  {
+    gap: 16px;
+    border: 1px solid gray;
+    padding: 20px;
+}
