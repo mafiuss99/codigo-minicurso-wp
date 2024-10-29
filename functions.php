@@ -30,7 +30,12 @@ function meu_tema_enqueue_assets() {
     // Enqueue do estilo principal
     wp_enqueue_style('meu-tema-style', get_template_directory_uri() . '/assets/style.css', array(), '1.0', 'all');
 
+    // Enqueue de uma fonte do Google Fonts
+    wp_enqueue_style('meu-tema-google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array(), null);
+
     // Enqueue do script principal
     wp_enqueue_script('meu-tema-script', get_template_directory_uri() . '/assets/script.js', array('jquery'), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'meu_tema_enqueue_assets');
+
+
