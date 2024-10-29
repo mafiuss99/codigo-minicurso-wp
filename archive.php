@@ -29,35 +29,6 @@ Template Name: Arquivo
     </ul>
 </section>
 
-<!-- Lista de Meses -->
-<section class="meses">
-    <h2>Arquivo por Mês</h2>
-    <ul>
-        <?php 
-        // Lista de meses
-        $meses = wp_get_archives(array(
-            'type' => 'monthly',
-            'format' => 'html',
-        ));
-        echo $meses;
-        ?>
-    </ul>
-</section>
-
-<!-- Lista de Anos -->
-<section class="anos">
-    <h2>Arquivo por Ano</h2>
-    <ul>
-        <?php 
-        // Lista de anos
-        $anos = wp_get_archives(array(
-            'type' => 'yearly',
-            'format' => 'html',
-        ));
-        echo $anos;
-        ?>
-    </ul>
-</section>
 
 <!-- Lista de Posts -->
 <section class="posts">
